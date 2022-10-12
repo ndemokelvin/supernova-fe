@@ -3,7 +3,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { createTheme, ThemeProvider } from "@mui/material";
 
-axios.defaults.baseURL = "https://c2f9-41-80-97-178.in.ngrok.io";
+axios.defaults.baseURL = process.env.NEXT_PUBLIC_API_URL;
 
 const theme = createTheme({});
 
